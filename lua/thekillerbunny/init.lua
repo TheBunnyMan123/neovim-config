@@ -1,3 +1,3 @@
 require("thekillerbunny.remap")
-require("thekillerbunny.packer")
+require("thekillerbunny.lazyload")
 require("thekillerbunny.config")
