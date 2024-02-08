@@ -35,7 +35,7 @@ require("lazy").setup({
       -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guide/integrate-with-mason-nvim.md
       require('mason').setup({})
       require('mason-lspconfig').setup({
-        ensure_installed = {"lua_ls", "csharp_ls", "java_language_server"},
+        ensure_installed = {"lua_ls", "omnisharp"},
         handlers = {
           lsp_zero.default_setup,
         },
@@ -104,7 +104,7 @@ end
   {
     "nvim-treesitter/nvim-treesitter", 
     build = ":TSUpdate",
-    config = function () 
+    config = function ()
       local configs = require("nvim-treesitter.configs")
 
       configs.setup({
